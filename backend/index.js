@@ -8,7 +8,7 @@ const app=express();
 DotENV.config();
 connectDB();
 
-const Port=process.env.Port
+const Port=process.env.Port||5000
 app.use(express.json())
 
 app.use("/",Routes);
